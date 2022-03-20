@@ -51,7 +51,7 @@ class ShoppingCartWidget extends StatelessWidget {
               () => CustomButton(
                 text:
                     "Pay (\$${cartController.totalCartPrice.value.toStringAsFixed(2)})",
-                onTap: () {},
+                onTap: () => paymentController.createPaymentMethod(),
               ),
             ),
           ),

@@ -36,4 +36,6 @@ class UserModel {
 
     return _result;
   }
+
+  List cartItemsToJson() => cart!.map((item) => item.toJson()).toList();
 }

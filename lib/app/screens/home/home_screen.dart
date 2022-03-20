@@ -51,12 +51,15 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
-              onTap: () {
-                authController.signOut();
-              },
+              onTap: () async => paymentController.getPaymentHistory(),
+              leading: const Icon(Icons.book),
+              title: const Text("Payments"),
+            ),
+            ListTile(
+              onTap: () => authController.signOut(),
               leading: const Icon(Icons.exit_to_app),
               title: const Text("Log out"),
-            )
+            ),
           ],
         ),
       ),
