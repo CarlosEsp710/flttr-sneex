@@ -25,8 +25,7 @@ class PaymentController extends GetxController {
   @override
   void onReady() async {
     super.onReady();
-    Stripe.publishableKey =
-        "pk_test_51JlhaxAsKbSxdpgFEZgwpMthWfw1pTGb1s2rxPvsT24Gl69aTp07FxPX4E6fMdSrsUwJIYtJ5uK3gkSLzGsnMM8r00wBZkpTgp";
+    Stripe.publishableKey = "";
     Stripe.merchantIdentifier = 'merchant.flutter.stripe.test';
     Stripe.urlScheme = 'flutterstripe';
     await Stripe.instance.applySettings();
